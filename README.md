@@ -1,6 +1,6 @@
 # How to gen ssl cert and key if you are using windows
 
-1. run an alpine container by command `docker run -it --name genssl-container alpine:lastest /bin/sh`
+1. run an alpine container by command `docker run -it --name genssl-container alpine:latest /bin/sh`
 2. download openssl by command `apk add --no-cache openssl`
 3. make a directory to store the cert and key by command `mkdir /ssl`, cd to that directory by command `cd /ssl`
 4. generate a private key by command `openssl genrsa -out private.key 2048`
